@@ -1,5 +1,19 @@
 "use client";
 
+import { Dancing_Script, Quicksand } from "next/font/google";
+
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-dancing",
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-quicksand",
+});
+
 export default function ProjectsPage() {
   const projects = [
     {
@@ -40,9 +54,13 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-rose-100 text-gray-900 px-6 py-12">
+    <div
+      className={`min-h-screen bg-gradient-to-br from-pink-50 to-rose-100 text-gray-900 px-6 py-12 ${quicksand.className}`}
+    >
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8 border-b border-rose-300 pb-2 text-rose-900">
+        <h1
+          className={`text-4xl font-bold mb-8 border-b border-rose-300 pb-2 text-rose-900 ${dancingScript.className}`}
+        >
           Projects
         </h1>
 
@@ -50,19 +68,21 @@ export default function ProjectsPage() {
           {projects.map((project) => (
             <div
               key={project.name}
-              className="bg-white rounded-xl p-6 shadow-md border border-rose-200"
+              className="bg-rose-50 rounded-2xl p-6 shadow-md border border-pink-200"
             >
               <h2 className="text-2xl font-semibold text-rose-900">
                 {project.name}
               </h2>
 
-              <p className="text-gray-800 mt-2">{project.description}</p>
+              <p className="text-gray-800 mt-2 text-sm sm:text-base leading-relaxed">
+                {project.description}
+              </p>
 
               <div className="mt-3 flex flex-wrap gap-2">
                 {project.techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="bg-pink-100 text-sm px-3 py-1 rounded-full text-pink-800 border border-pink-200"
+                    className="bg-pink-100 text-sm px-3 py-1 rounded-full text-pink-800 border border-pink-200 shadow-sm"
                   >
                     {tech}
                   </span>
