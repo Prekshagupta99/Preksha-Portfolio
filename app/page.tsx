@@ -42,20 +42,30 @@ export default function HomePage() {
             projects.
           </p>
 
-          <div className="flex justify-center md:justify-start space-x-5 pt-4 text-2xl text-rose-600">
-            <a
-              href="https://www.linkedin.com/in/preksha-gupta-701314210/"
-              target="_blank"
-            >
-              <FaLinkedin className="hover:text-rose-800 transition" />
-            </a>
-            <a href="https://github.com/Prekshagupta99" target="_blank">
-              <FaGithub className="hover:text-rose-800 transition" />
-            </a>
-            <a href="mailto:prekshamanglagupta@gmail.com">
-              <FaEnvelope className="hover:text-rose-800 transition" />
-            </a>
-          </div>
+<div className="flex justify-center md:justify-start space-x-5 pt-4 text-2xl">
+  <a
+    href="https://www.linkedin.com/in/preksha-gupta-701314210/"
+    target="_blank"
+    className="text-rose-400 hover:text-rose-600 transition"
+  >
+    <FaLinkedin />
+  </a>
+  <a
+    href="https://github.com/Prekshagupta99"
+    target="_blank"
+    className="text-rose-400 hover:text-rose-600 transition"
+  >
+    <FaGithub />
+  </a>
+  <a
+    href="mailto:prekshamanglagupta@gmail.com"
+    className="text-rose-400 hover:text-rose-600 transition"
+  >
+    <FaEnvelope />
+  </a>
+</div>
+
+
         </div>
 
         {/* Profile Image */}
@@ -163,7 +173,7 @@ export default function HomePage() {
               Core Computer Science
             </h3>
             <div className="flex flex-wrap gap-2">
-              {["Operating Systems", "DBMS", "OOPS", "CN"].map((skill) => (
+              {["Operating Systems", "Database Management System", "Object Oriented Programming System", "Computer Network"].map((skill) => (
                 <span
                   key={skill}
                   className="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm border border-pink-200 shadow"

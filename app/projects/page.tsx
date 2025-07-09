@@ -68,7 +68,7 @@ export default function ProjectsPage() {
           {projects.map((project) => (
             <div
               key={project.name}
-              className="bg-rose-50 rounded-2xl p-6 shadow-md border border-pink-200"
+              className="bg-white rounded-2xl p-6 shadow-sm border border-rose-200"
             >
               <h2 className="text-2xl font-semibold text-rose-900">
                 {project.name}
@@ -82,7 +82,7 @@ export default function ProjectsPage() {
                 {project.techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="bg-pink-100 text-sm px-3 py-1 rounded-full text-pink-800 border border-pink-200 shadow-sm"
+                    className="bg-rose-100 text-sm px-3 py-1 rounded-full text-rose-800 border border-rose-200 shadow-sm"
                   >
                     {tech}
                   </span>
@@ -94,7 +94,7 @@ export default function ProjectsPage() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-pink-100 hover:bg-pink-200 text-pink-800 text-sm px-4 py-2 rounded-md border border-pink-200 font-medium transition"
+                  className="inline-block bg-rose-300 hover:bg-rose-400 text-white text-sm px-4 py-2 rounded-md font-medium shadow transition"
                 >
                   Visit Site
                 </a>

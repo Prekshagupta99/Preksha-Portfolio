@@ -25,6 +25,7 @@ export default function Navbar() {
       className={`bg-gradient-to-r from-pink-50 to-rose-100 text-rose-900 px-6 py-4 shadow-sm ${quicksand.className}`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
+        {/* Logo / Name */}
         <Link href="/" className="cursor-pointer">
           <h1
             className={`text-2xl md:text-3xl font-semibold text-rose-900 ${playfair.className}`}
@@ -51,7 +52,7 @@ export default function Navbar() {
             href="https://drive.google.com/file/d/1ISjjKbAwbwFPzh6bHxzykL1BliKlBdRA/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-rose-600 transition"
+            className="bg-rose-100 border border-rose-300 text-rose-700 px-3 py-1.5 rounded-md font-medium shadow-sm hover:bg-rose-200 transition"
           >
             Resume
           </a>
@@ -100,7 +101,7 @@ export default function Navbar() {
             href="https://drive.google.com/file/d/1ISjjKbAwbwFPzh6bHxzykL1BliKlBdRA/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-rose-600 transition"
+            className="bg-rose-100 border border-rose-300 text-rose-700 px-3 py-1.5 rounded-md font-medium shadow-sm hover:bg-rose-200 transition"
           >
             Resume
           </a>
