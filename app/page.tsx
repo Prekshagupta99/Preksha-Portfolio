@@ -24,53 +24,52 @@ export default function HomePage() {
     >
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 text-center md:text-left">
-  {/* Text Content */}
-  <div className="flex-1 space-y-6 md:max-w-lg">
-    <p
-      className={`text-3xl sm:text-4xl text-rose-800 italic ${dancingScript.className}`}
-    >
-      Hello there, I'm Preksha
-    </p>
+        {/* Text Content */}
+        <div className="flex-1 space-y-6 md:max-w-lg">
+          <p
+            className={`text-3xl sm:text-4xl text-rose-800 italic ${dancingScript.className}`}
+          >
+            Hello there, I'm Preksha
+          </p>
 
-    <p className="text-sm sm:text-md text-gray-700">
-      I’m a full stack developer with one year of experience at Citi,
-      where I build reliable backend systems and intuitive frontend
-      interfaces using Java, Spring Boot, React, and SQL. I have a strong
-      foundation in computer science and a passion for writing clean,
-      efficient code. I'm actively exploring opportunities that allow me
-      to take on greater technical ownership and contribute to meaningful
-      projects.
-    </p>
+          <p className="text-sm sm:text-md text-gray-700">
+            I’m a full stack developer with one year of experience at Citi,
+            where I build reliable backend systems and intuitive frontend
+            interfaces using Java, Spring Boot, React, and SQL. I have a strong
+            foundation in computer science and a passion for writing clean and
+            efficient code. I'm actively exploring opportunities that allow me
+            to take on greater technical ownership and contribute to meaningful
+            projects.
+          </p>
 
-    <div className="flex justify-center md:justify-start space-x-5 pt-4 text-2xl text-rose-600">
-      <a
-        href="https://www.linkedin.com/in/preksha-gupta-701314210/"
-        target="_blank"
-      >
-        <FaLinkedin className="hover:text-rose-800 transition" />
-      </a>
-      <a href="https://github.com/Prekshagupta99" target="_blank">
-        <FaGithub className="hover:text-rose-800 transition" />
-      </a>
-      <a href="mailto:prekshamanglagupta@gmail.com">
-        <FaEnvelope className="hover:text-rose-800 transition" />
-      </a>
-    </div>
-  </div>
+          <div className="flex justify-center md:justify-start space-x-5 pt-4 text-2xl text-rose-600">
+            <a
+              href="https://www.linkedin.com/in/preksha-gupta-701314210/"
+              target="_blank"
+            >
+              <FaLinkedin className="hover:text-rose-800 transition" />
+            </a>
+            <a href="https://github.com/Prekshagupta99" target="_blank">
+              <FaGithub className="hover:text-rose-800 transition" />
+            </a>
+            <a href="mailto:prekshamanglagupta@gmail.com">
+              <FaEnvelope className="hover:text-rose-800 transition" />
+            </a>
+          </div>
+        </div>
 
-  {/* Profile Image */}
-  <div className="flex-1 flex justify-center md:justify-end">
-    <Image
-      src={profilePic}
-      alt="Preksha Gupta"
-      className="rounded-2xl border-4 border-rose-200 shadow-lg object-cover"
-      width={220}
-      height={220}
-      priority
-    />
-  </div>
-</section>
-
+        {/* Profile Image */}
+        <div className="flex-1 flex justify-center md:justify-end">
+          <Image
+            src={profilePic}
+            alt="Preksha Gupta"
+            className="rounded-2xl border-4 border-rose-200 shadow-lg object-cover"
+            width={220}
+            height={220}
+            priority
+          />
+        </div>
+      </section>
 
       {/* About Section */}
       <section id="about" className="max-w-4xl mx-auto space-y-4 px-2 sm:px-0">
@@ -88,7 +87,7 @@ export default function HomePage() {
           responsive user interfaces, or optimizing data processing for
           performance.
         </p>
-        <p>
+        <p className="leading-relaxed text-gray-800 text-sm sm:text-base">
           I am particularly interested in full stack development because it
           allows me to combine backend logic with seamless user experiences. I
           believe in continuous learning, thoughtful engineering, and writing

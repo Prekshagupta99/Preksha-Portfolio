@@ -1,7 +1,9 @@
 'use client';
 
+import { Menu, X } from 'lucide-react';
 import { Playfair_Display, Quicksand } from 'next/font/google';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -16,6 +18,8 @@ const quicksand = Quicksand({
 });
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav
       className={`bg-gradient-to-r from-pink-50 to-rose-100 text-rose-900 px-6 py-4 shadow-sm ${quicksand.className}`}
@@ -29,7 +33,8 @@ export default function Navbar() {
           </h1>
         </Link>
 
-        <div className="flex items-center space-x-6 text-sm md:text-base">
+        {/* Desktop Links */}
+        <div className="hidden md:flex items-center space-x-6 text-sm md:text-base">
           <Link href="/#about" className="hover:text-rose-600 transition">
             About
           </Link>
@@ -51,7 +56,56 @@ export default function Navbar() {
             Resume
           </a>
         </div>
+
+        {/* Hamburger Menu for Mobile */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden mt-4 space-y-3 text-sm flex flex-col items-start px-2">
+          <Link
+            href="/#about"
+            onClick={() => setIsOpen(false)}
+            className="hover:text-rose-600 transition"
+          >
+            About
+          </Link>
+          <Link
+            href="/education"
+            onClick={() => setIsOpen(false)}
+            className="hover:text-rose-600 transition"
+          >
+            Education
+          </Link>
+          <Link
+            href="/experience"
+            onClick={() => setIsOpen(false)}
+            className="hover:text-rose-600 transition"
+          >
+            Experience
+          </Link>
+          <Link
+            href="/projects"
+            onClick={() => setIsOpen(false)}
+            className="hover:text-rose-600 transition"
+          >
+            Projects
+          </Link>
+          <a
+            href="https://drive.google.com/file/d/1ISjjKbAwbwFPzh6bHxzykL1BliKlBdRA/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-rose-600 transition"
+          >
+            Resume
+          </a>
+        </div>
+      )}
     </nav>
   );
 }
