@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Preksha Gupta",
   description: "See what I do",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

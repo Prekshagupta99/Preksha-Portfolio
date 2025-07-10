@@ -34,7 +34,7 @@ export default function EducationPage() {
           <p className="text-gray-800 mb-1">B.Tech in Information Technology</p>
           <p className="text-rose-700 text-sm">2020–2024</p>
           <p className="text-gray-900 mt-2">
-            CGPA: <span className="font-semibold">9.12</span>
+            CGPA: <span>9.12</span>
           </p>
         </div>
 

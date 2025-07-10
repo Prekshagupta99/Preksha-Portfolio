@@ -1,15 +1,9 @@
 'use client';
 
 import { Menu, X } from 'lucide-react';
-import { Playfair_Display, Quicksand } from 'next/font/google';
+import { Quicksand } from 'next/font/google';
 import Link from 'next/link';
 import { useState } from 'react';
-
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['500', '600', '700'],
-  variable: '--font-playfair',
-});
 
 const quicksand = Quicksand({
   subsets: ['latin'],
@@ -24,16 +18,7 @@ export default function Navbar() {
     <nav
       className={`bg-gradient-to-r from-pink-50 to-rose-100 text-rose-900 px-6 py-4 shadow-sm ${quicksand.className}`}
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        {/* Logo / Name */}
-        <Link href="/" className="cursor-pointer">
-          <h1
-            className={`text-2xl md:text-3xl font-semibold text-rose-900 ${playfair.className}`}
-          >
-            Preksha Gupta
-          </h1>
-        </Link>
-
+      <div className="max-w-7xl mx-auto flex justify-center items-center relative">
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-6 text-sm md:text-base">
           <Link href="/#about" className="hover:text-rose-600 transition">
@@ -59,7 +44,7 @@ export default function Navbar() {
         </div>
 
         {/* Hamburger Menu for Mobile */}
-        <div className="md:hidden">
+        <div className="absolute right-0 md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -68,7 +53,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden mt-4 space-y-3 text-sm flex flex-col items-start px-2">
+        <div className="md:hidden mt-4 space-y-3 text-sm flex flex-col items-center px-2">
           <Link
             href="/#about"
             onClick={() => setIsOpen(false)}
