@@ -26,14 +26,37 @@ export default function ExperiencePage() {
           Experience
         </h1>
 
-        {/* Full-time Role */}
+        {/* Full-time Role 2*/}
+        <div className="bg-rose-50 rounded-2xl p-6 shadow-md mb-6 border border-rose-200">
+          <h2 className="text-2xl font-semibold text-rose-900">
+            Technology Analyst 2– Citi India
+          </h2>
+          <p className="text-rose-700 text-sm mb-2">July 2025 – Present</p>
+          <p className="text-gray-800 mb-4">
+            <span className="font-medium">Tech Stack:</span> SpringBoot, Apache Camel
+          </p>
+          <ul className="space-y-2 text-gray-800 text-sm sm:text-base">
+            {[
+              "Transitioned Lightspeed Classic to Enterprise in different services, enabling seamless data flow and minimizing system downtime.",
+              "Migrating multiple services from Apache Camel Fuse to Apache Camel, improving scalability and system reliability.",
+            ].map((item, index) => (
+              <li key={index} className="flex gap-2 items-start">
+                <span className="text-pink-600 text-base mt-0.5">🌸</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Full-time Role 1*/}
         <div className="bg-rose-50 rounded-2xl p-6 shadow-md mb-6 border border-rose-200">
           <h2 className="text-2xl font-semibold text-rose-900">
             Technology Analyst – Citi India
           </h2>
-          <p className="text-rose-700 text-sm mb-2">July 2024 – Present</p>
+          <p className="text-rose-700 text-sm mb-2">July 2024 – July 2025</p>
           <p className="text-gray-800 mb-4">
-            <span className="font-medium">Tech Stack:</span> Spring Boot, React.js, SQL
+            <span className="font-medium">Tech Stack:</span> Spring Boot,
+            React.js, SQL
           </p>
           <ul className="space-y-2 text-gray-800 text-sm sm:text-base">
             {[

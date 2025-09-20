@@ -21,7 +21,7 @@ export default function ProjectsPage() {
       description:
         "EasyLabour is a service-based platform designed to connect skilled laborers like painters, electricians, carpenters, and plumbers with potential clients in need of their services. The application enables easy registration for workers, location-based job matching, and a smooth booking experience for users. It aims to promote employment for daily wage workers while providing reliable help for household needs. Built with a scalable backend and an intuitive frontend.",
       techStack: ["Java", "React", "MySQL"],
-      link: "#",
+      link: "https://www.easylabour.in/",
     },
     {
       name: "Mehucal",
