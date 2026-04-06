@@ -28,7 +28,7 @@ export default function Navbar() {
           Projects
         </Link>
         <a
-          href="https://drive.google.com/file/d/1XOsnUyqPA8XLc44WOA6vthw_WssJVct_/view?usp=sharing"
+          href="https://drive.google.com/file/d/1ITohHwVQMbpMYoa6BrpA2QzxLlSh6vDC/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-rose-100 border border-rose-300 text-rose-700 px-3 py-1 rounded-md font-medium shadow-sm hover:bg-rose-200 transition"

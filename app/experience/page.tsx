@@ -26,49 +26,57 @@ export default function ExperiencePage() {
           Experience
         </h1>
 
-        {/* Full-time Role 2*/}
+        {/* TA 2 */}
         <div className="bg-rose-50 rounded-2xl p-6 shadow-md mb-6 border border-rose-200">
           <h2 className="text-2xl font-semibold text-rose-900">
-            Technology Analyst 2– Citi India
+            Technology Analyst 2 – Citi India
           </h2>
-          <p className="text-rose-700 text-sm mb-2">July 2025 – Present</p>
-          <p className="text-gray-800 mb-4">
-            <span className="font-medium">Tech Stack:</span> SpringBoot, Apache Camel
+          <p className="text-rose-700 text-sm mb-2">
+            Core Accounts | July 2025 – Present
           </p>
+          <p className="text-gray-800 mb-4">
+            <span className="font-medium">Tech Stack:</span> Java, Spring Boot,
+            Apache Camel, MCP, LLM
+          </p>
+
           <ul className="space-y-2 text-gray-800 text-sm sm:text-base">
             {[
-              "Transitioned Lightspeed Classic to Enterprise in different services, enabling seamless data flow and minimizing system downtime.",
-              "Migrating multiple services from Apache Camel Fuse to Apache Camel, improving scalability and system reliability.",
+              "Led migration of multiple services from Red Hat Fuse to Apache Camel 4, improving reliability and security.",
+              "Built an agent using MCP and LLM for enterprise-wide React and Angular UI generation with 100% compliance to company UI standards, reducing development timelines by 75%.",
+              "Won Citi’s internal Prompt-a-thon among 100+ participants for end-to-end prompt solutions including JIRA story creation, full-stack development, and automated test case generation.",
+              "Optimised system uptime and data flow by transitioning the system from Lightspeed Classic to Enterprise.",
+              "Owned production support for critical backend applications and deployment validation to ensure high system reliability.",
             ].map((item, index) => (
               <li key={index} className="flex gap-2 items-start">
-                <span className="text-pink-600 text-base mt-0.5">🌸</span>
+                <span className="text-pink-600 mt-0.5">🌸</span>
                 <span>{item}</span>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Full-time Role 1*/}
+        {/* TA 1 */}
         <div className="bg-rose-50 rounded-2xl p-6 shadow-md mb-6 border border-rose-200">
           <h2 className="text-2xl font-semibold text-rose-900">
-            Technology Analyst – Citi India
+            Technology Analyst 1 – Citi India
           </h2>
-          <p className="text-rose-700 text-sm mb-2">July 2024 – July 2025</p>
+          <p className="text-rose-700 text-sm mb-2">
+            Global Credit Control System | July 2024 – June 2025
+          </p>
           <p className="text-gray-800 mb-4">
             <span className="font-medium">Tech Stack:</span> Spring Boot,
             React.js, SQL
           </p>
+
           <ul className="space-y-2 text-gray-800 text-sm sm:text-base">
             {[
-              "Developed a full-stack migration tool, automating data and rules migration from higher to lower environments, reducing manual effort by 60%.",
-              "Implemented backend services in Java to handle complex migration rules and ensure seamless data transfer.",
-              "Created React.js components for managing migration workflows with a user-friendly UI.",
-              "Migrated legacy .NET microservices to Spring Boot, improving system scalability and performance.",
-              "Built a Git utility tool using Spring Boot to fetch added/removed/total lines of code across repositories using Git commands.",
-              "Performed unit testing to validate code functionality and prevent regressions.",
+              "Engineered a full-stack migration tool in React and Spring Boot to automate data and rule transfer between environments, reducing manual effort by 60%.",
+              "Migrated .NET microservices to Spring Boot, significantly improving system performance and scalability.",
+              "Built a Java-based Git utility tool using Spring Boot to analyze repositories and generate code change reports.",
+              "Performed daily UAT monitoring by validating scheduled jobs, troubleshooting discrepancies, and ensuring smooth operations.",
             ].map((item, index) => (
               <li key={index} className="flex gap-2 items-start">
-                <span className="text-pink-600 text-base mt-0.5">🌸</span>
+                <span className="text-pink-600 mt-0.5">🌸</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -80,18 +88,21 @@ export default function ExperiencePage() {
           <h2 className="text-2xl font-semibold text-rose-900">
             Technology Intern – Citi India
           </h2>
-          <p className="text-rose-700 text-sm mb-2">June – July 2023</p>
-          <p className="text-gray-800 mb-4">
-            <span className="font-medium">Tech Stack:</span> Spring Boot, Java
+          <p className="text-rose-700 text-sm mb-2">
+            Equities | May 2023 – August 2023
           </p>
+          <p className="text-gray-800 mb-4">
+            <span className="font-medium">Tech Stack:</span> Java, Spring Boot,
+            Solace
+          </p>
+
           <ul className="space-y-2 text-gray-800 text-sm sm:text-base">
             {[
-              "Managed Solace connections, optimizing secure data reception and forwarding across multiple instances.",
-              "Built APIs to transmit data from backend systems to UI, ensuring real-time delivery and seamless interaction.",
-              "Improved data flow reliability and user experience through performance tuning and code optimization.",
+              "Developed a real-time performance tracking system to monitor latency, throughput, and processing volume.",
+              "Optimized Solace connections to ensure reliable and secure data reception across multiple instances.",
             ].map((item, index) => (
               <li key={index} className="flex gap-2 items-start">
-                <span className="text-yellow-500 text-base mt-0.5">💫</span>
+                <span className="text-yellow-500 mt-0.5">💫</span>
                 <span>{item}</span>
               </li>
             ))}
